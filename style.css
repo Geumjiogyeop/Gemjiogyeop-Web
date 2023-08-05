@@ -41,7 +41,7 @@ html,body{
 .select-box button{
     border-radius: 5px;
     border: 1px solid #FFA24B;
-    background-color: transparent;
+    /* background-color: #FFF; */
     padding: 12px 24px 12px 24px;
     height: 50%;
 }
@@ -49,13 +49,14 @@ html,body{
     background-color: #FFA24B;
     color: #FFF;
 }
-#second-content-box input[type="text"]{
+#second-content-box input[type="text"],#third-content-box input[type="date"]{
     width: 60%;
     height: 70%;
 
     border-radius: 5px;
     border: 1px solid var(--main-or, #FFA24B);
     padding-left: 13px;
+    padding-right: 13px;
 }
 #fourth-content-box textarea{
     width: 300px;
@@ -111,4 +112,10 @@ html,body{
     font-weight: 700;
     line-height: 21px; /* 123.529% */
     letter-spacing: -0.32px;
+}
+
+.selected{
+    border-radius: 5px;
+    background-color: #FFA24B;
+    color: var(--main-wh, #FFF);
 }

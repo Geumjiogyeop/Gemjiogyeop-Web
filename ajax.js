@@ -5,7 +5,7 @@ $("#submitBtn").click(function(){
         if(type=="type-etc"){
             $.ajax({
                 type : 'post',           // 타입 (get, post, put 등등)
-                url : '/test',           // 요청할 서버url
+                url : '/report',           // 요청할 서버url
                 async : true,            // 비동기화 여부 (default : true)
                 headers : {              // Http header
                   "Content-Type" : "application/json",
@@ -13,8 +13,8 @@ $("#submitBtn").click(function(){
                 },
                 dataType : 'json',       // 데이터 타입 (html, xml, json, text 등등)
                 data : JSON.stringify({  // 보낼 데이터 (Object , String, Array)
-                  "realationship" : realationship,
-                  "userID" : userID,
+                  "relation" : realationship,
+                  "victim_id" : userID,
                   "date" : date,
                   "type" : type,
                   "etc" : etc
@@ -35,7 +35,7 @@ $("#submitBtn").click(function(){
         }else{
             $.ajax({
                 type : 'post',           // 타입 (get, post, put 등등)
-                url : '/test',           // 요청할 서버url
+                url : '/report',           // 요청할 서버url
                 async : true,            // 비동기화 여부 (default : true)
                 headers : {              // Http header
                   "Content-Type" : "application/json",
@@ -43,8 +43,8 @@ $("#submitBtn").click(function(){
                 },
                 dataType : 'json',       // 데이터 타입 (html, xml, json, text 등등)
                 data : JSON.stringify({  // 보낼 데이터 (Object , String, Array)
-                  "realationship" : realationship,
-                  "userID" : userID,
+                  "relation" : realationship,
+                  "victim_id" : userID,
                   "date" : date,
                   "type" : type
                 }),

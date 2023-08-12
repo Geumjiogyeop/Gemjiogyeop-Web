@@ -18,7 +18,7 @@
         letter-spacing: -0.32px;">신고접수</p>
         <div id="first-content-box">
             <p class="content-title">사고자와의 관계</p>
-            <div id="fisrt-select-box" class="select-box">
+            <div id="fisrt-select-box" class="select-box" style="width: 272px;">
                 <button class="first-btn" id="me">본인</button>
                 <button class="first-btn" id="family">가족</button>
                 <button class="first-btn" id="rel-etc">기타</button>
@@ -26,15 +26,22 @@
         </div>
         <div id="second-content-box">
             <p class="content-title">사고자 ID</p>
-            <input type="text" name="" id="userID" placeholder="#1234">
+            <input style="width: 217px;" type="text" name="" id="userID" placeholder="#1234">
         </div>
         <div id="third-content-box">
             <p class="content-title">사고일시</p>
-            <input type="date" name="" id="date">
+            <input type="date" name="" id="date" value="0000-00-00">
         </div>
+        <!-- <div id="area-box">
+            <p class="content-title">사고지역</p>
+
+            <select name="addressRegion" id="addressRegion1"></select>
+            <select name="addressDo" id="addressDo1"></select>
+            <select name="addressSiGunGu" id="addressSiGunGu1"></select>
+        </div> -->
         <div id="fourth-content-box">
             <p class="content-title">사고유형</p>
-            <div id="fourth-select-box" class="select-box">
+            <div id="fourth-select-box" class="select-box" style="width: 272px;">
                 <button class="fourth-btn" id="admission">입원</button>
                 <button class="fourth-btn" id="death">사망</button>
                 <button class="fourth-btn" id="type-etc">기타</button>
@@ -78,6 +85,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="./js.js"></script>
+    <!-- <script src="./selectedArea.js"></script> -->
     <script src="./ajax.js"></script>
 </body>
 </html>

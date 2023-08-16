@@ -61,6 +61,7 @@ $("#submitBtn").click(function(){
             console.log("userID:"+userID);
             console.log("date:"+date);
             console.log("type:"+type);
+            alert("신고접수 되었습니다.")
         }
     }else{
         console.log("isSubmit:"+isSubmit+"상태이므로 오류");

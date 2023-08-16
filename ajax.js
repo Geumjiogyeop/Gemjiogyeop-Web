@@ -32,6 +32,8 @@ $("#submitBtn").click(function(){
             console.log("date:"+date);
             console.log("type:"+type);
             console.log("etc:"+etc);
+
+            alert("신고접수 되었습니다.")
         }else{
             $.ajax({
                 type : 'post',           // 타입 (get, post, put 등등)

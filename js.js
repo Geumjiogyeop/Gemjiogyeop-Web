@@ -56,7 +56,7 @@ $("#userID").on("change",function(){
 //date
 $("#date").on("change",function(){
     date = $(this).val();
-    newdate = new Date(date);
+    inputdate = new Date(date);
     var currentDate = new Date();
 
     if (inputdate > currentDate) {

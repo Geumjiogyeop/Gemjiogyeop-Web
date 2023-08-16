@@ -56,8 +56,14 @@ $("#userID").on("change",function(){
 //date
 $("#date").on("change",function(){
     date = $(this).val();
-    console.log(date);
-    checkSubmit();
+    var currentDate = new Date();
+
+    if (date > currentDate) {
+        alert("미래 날짜는 선택할 수 없습니다.");
+    }else{
+        console.log(date);
+        checkSubmit();
+    }
 })
 
 //type

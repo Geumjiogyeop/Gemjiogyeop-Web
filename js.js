@@ -56,9 +56,10 @@ $("#userID").on("change",function(){
 //date
 $("#date").on("change",function(){
     date = $(this).val();
+    newdate = new Date(date);
     var currentDate = new Date();
 
-    if (date > currentDate) {
+    if (inputdate > currentDate) {
         alert("미래 날짜는 선택할 수 없습니다.");
     }else{
         console.log(date);

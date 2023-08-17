@@ -13,6 +13,7 @@ $("#submitBtn").click(function(){
                 },
                 dataType : 'json',       // 데이터 타입 (html, xml, json, text 등등)
                 data : JSON.stringify({  // 보낼 데이터 (Object , String, Array)
+                    "name" : username,
                   "relation" : realationship,
                   "victim_id" : userID,
                   "date" : date,
@@ -45,6 +46,7 @@ $("#submitBtn").click(function(){
                 },
                 dataType : 'json',       // 데이터 타입 (html, xml, json, text 등등)
                 data : JSON.stringify({  // 보낼 데이터 (Object , String, Array)
+                    "name" : username,
                   "relation" : realationship,
                   "victim_id" : userID,
                   "date" : date,

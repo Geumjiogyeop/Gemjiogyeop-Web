@@ -49,11 +49,11 @@ html,body{
     padding: 25px;
 }
 #first-content-box{
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 7%;
+    margin-bottom: 2%;
 }
-#first-content-box,#second-content-box,#third-content-box,#fourth-content-box{
-    margin-bottom: 15%;
+#first-content-box,#second-content-box,#third-content-box,#fourth-content-box,#name-content-box{
+    margin-bottom: 11%;
 }
 .content-title{
     margin-bottom: 15px;
@@ -82,7 +82,7 @@ html,body{
     background-color: #FFA24B;
     color: #FFF;
 }
-#second-content-box input[type="text"],#third-content-box input[type="date"]{
+#second-content-box input[type="text"],#third-content-box input[type="date"],#name-content-box input[type="text"]{
     width: 60%;
     height: 70%;
 

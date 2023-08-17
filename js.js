@@ -35,6 +35,7 @@ var type = "admission";
 var etc = "";
 var isClicked = "";
 var isSubmit="false";
+var username="";
 
 //realationship 
 $("#me").click(function(){
@@ -50,6 +51,11 @@ $("#rel-etc").click(function(){
 //userID
 $("#userID").on("change",function(){
     userID = $(this).val();
+    checkSubmit();
+})
+
+$("#name").on("change",function(){
+    username = $(this).val();
     checkSubmit();
 })
 
@@ -93,7 +99,7 @@ $("#check-box").click(function(){
 });
 
 function check(){
-    if(userID!=""&&date!=""&&isClicked=="true"){
+    if(userID!=""&&date!=""&&isClicked=="true"&&username!=""){
         if(type=="type-etc"){
             if(etc!=""){
                 isSubmit="true";

@@ -4,7 +4,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
 
     if (isSubmit === "true") {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://175.45.194.93/report/", true);
+        xhr.open("POST", "http://175.45.194.93/report/", true); // Use "http://" instead of "https://"
         xhr.setRequestHeader("Content-Type", "application/json");
         
         var data = {
